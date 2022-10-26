@@ -1,3 +1,4 @@
-h1 {
-    color: rgb(19, 90, 138);
-}
+@use "base/normalize";
+@import "abstracts/text-styles";
+@import "abstracts/color-styles";
+@import "layout/header";

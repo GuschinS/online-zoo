@@ -1,0 +1,79 @@
+@import "../abstracts/text-styles";
+@import "../abstracts/color-styles";
+
+header {
+  position: relative;
+  height: 80px;
+  background: #000000;
+  backdrop-filter: blur(2px);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72.5%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .logo-nav {
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    width: 82px;
+    padding-top: 4px;
+    background-image: url(../assets/svg/bamboo.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 6px left 10px;
+    text-align: center;
+    border: 1.18841px solid #ffffff;
+    @include logo;
+  }
+  a {
+    color: $color-white;
+    transition: color 500ms;
+    &:hover {
+      color: $color-orange-light;
+      transition: color 500ms;
+    }
+  }
+  p {
+    @include medium;
+    color: #ffffff;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+ul {
+  display: flex;
+  margin-left: -0.7%;
+  li {
+    width: 96px;
+    text-align: center;
+    a {
+      @include medium;
+      color: $color-white;
+      transition: color 500ms;
+      &:hover {
+        color: $color-orange-light;
+        transition: color 500ms;
+      }
+    }
+    &:nth-child(5) {
+      width: 116px;
+      margin-left: 18px;
+    }
+    &:nth-child(3) a {
+      margin-left: -9px;
+    }
+  }
+  .active a {
+    color: $color-orange;
+    cursor: default;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+}
