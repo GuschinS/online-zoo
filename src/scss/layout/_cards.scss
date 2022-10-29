@@ -1,0 +1,125 @@
+@import "../abstracts/text-styles";
+@import "../abstracts/color-styles";
+@import "../components/button";
+@import "../components/carousel";
+@import "../components/grid-position";
+
+.animals-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 97px;
+    button {
+        width: 298px;
+        height: 54px;
+        margin-top: 80px;
+        padding-right: 2px;
+    }
+    .palm {
+        position: absolute;
+        width: 855px;
+        height: 460px;
+        left: -585px;
+        top: 2149px;
+        background-image: url(../assets/svg/palm-desktop.svg);
+    }
+    .strelitzia {
+        position: absolute;
+        width: 368px;
+        height: 275px;
+        right: 0%;
+        top: 2334px;
+        background-image: url(../assets/svg/strelitzia-desktop.svg);
+    }
+}
+.animals-cards {
+    display: flex;
+    align-items: center;
+    width: calc(84vw - 20px);
+    margin: 0 auto;
+    .left-right {
+        width: 62px;
+        height: 62px;
+        margin-bottom: 5px;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: $color-orange;
+        transition-duration: 300ms;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+            transition-duration: 300ms;
+        }
+        &:active {
+            background-color: $color-green;
+        }
+    }
+    .left-button {
+        background-image: url(../assets/svg/arr-left.svg);
+    }
+    .right-button {
+        background-image: url(../assets/svg/arr-right.svg);
+    }
+}
+.cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    width: calc(74vw - 26px);
+    background-color: $color-white;
+    margin: 0 auto;
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: calc(24vw - 18px);
+        border: solid 1px #fe9013;
+        border-radius: 5px;
+        transition: background-size 1000ms;
+        &:hover {
+            cursor: pointer;
+            .img {
+                filter: brightness(40%);
+                background-size: 103%;
+                transition: filter 1000ms, background-size 1000ms;
+            }
+            .description {
+                transform: translate(0, -80px);
+                color: $color-white;
+                transition: transform 1000ms, color 1000ms;
+            }
+        }
+    }
+    .img {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 366px;
+        background-size: 100%;
+        transition: filter 1000ms, background-size 1000ms;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .description {
+        // width: 100%;
+        background-repeat: no-repeat;
+        padding-left: 15px;
+        transition: transform 1000ms, color 1000ms;
+        h3 {
+            @include description-h3;
+            margin: 8px 0 -1px;
+        }
+        p {
+            @include description;
+            margin: 0 0 12px;
+        }
+    }
+    .banana {
+        background-image: url(../assets/svg/banana-bamboo-icon.svg);
+        background-position: bottom 12px right 12px;
+    }
+    .meet {
+        background-image: url(../assets/svg/meet-fish-icon.svg);
+        background-position: bottom 13px right 8px;
+    }
+}
