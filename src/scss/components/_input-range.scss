@@ -1,0 +1,27 @@
+#range-donate::before {
+    content: "";
+    position: absolute;
+    background: #72828e;
+    box-shadow: 0 1px 0 #72828e;
+    width: 96%;
+    height: 2px;
+    right: 2%;
+    bottom: 14px;
+    z-index: 1;
+}
+
+#range-donate::after {
+    content: "";
+    position: absolute;
+    background: $color-yellow;
+    width: 10px;
+    height: 10px;
+    left: 1.7%;
+    bottom: 9px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 8.1vw 0 0 #ffee2e, 16.2vw 0 0 #ffee2e, 24.3vw 0 0 #ffee2e, 32.4vw 0 0 #ffee2e, 40.5vw 0 0 #ffee2e,
+        48.6vw 0 0 #ffee2e, 56.8vw 0 0 #ffee2e;
+    // box-shadow: 130px 0 0 $color-yellow, 260px 0 0 $color-yellow, 390px 0 0 $color-yellow, 520px 0 0 $color-yellow,
+    //     650px 0 0 $color-yellow, 780px 0 0 $color-yellow, 910px 0 0 $color-yellow;
+}
