@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 97px;
+    padding-bottom: 101px;
     button {
         width: 298px;
         height: 54px;
@@ -73,7 +73,7 @@
     .card {
         display: flex;
         flex-direction: column;
-        width: calc(24vw - 18px);
+        width: calc(24vw - 20px);
         border: solid 1px #fe9013;
         border-radius: 5px;
         transition: background-size 1000ms;
@@ -101,16 +101,16 @@
         border-top-right-radius: 5px;
     }
     .description {
-        // width: 100%;
         background-repeat: no-repeat;
         padding-left: 15px;
         transition: transform 1000ms, color 1000ms;
         h3 {
             @include description-h3;
-            margin: 8px 0 -1px;
+            margin: 8px 0 0;
         }
         p {
             @include description;
+            line-height: 100%;
             margin: 0 0 12px;
         }
     }

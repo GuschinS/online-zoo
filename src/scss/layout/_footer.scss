@@ -11,7 +11,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    // max-width: 1160px;
     width: 72.5%;
     margin: 0 auto;
     padding-top: 25px;
@@ -48,11 +47,12 @@ footer {
     }
     .social-nav {
         display: flex;
+        justify-content: space-between;
     }
     .social {
         display: flex;
         flex-direction: column;
-        margin-top: 32px;
+        margin-top: 34px;
         a {
             margin-top: 10px;
             transition: transform 500ms;
@@ -91,16 +91,16 @@ footer {
         display: flex;
         align-items: flex-end;
         max-width: 792px;
-        height: 195px;
-        padding-left: 19.4%;
+        ul {
+            margin-bottom: 0;
+            padding-left: 5.5em;
+        }
         li:nth-child(4) {
-            width: 100px;
-            padding-left: 21px;
+            padding-right: 0;
         }
     }
     .three {
         display: flex;
-        width: 31.7%;
     }
     .three .email {
         color: $color-white;
@@ -129,18 +129,16 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 174px;
-        padding-left: 14.5%;
         color: $color-white;
         @include text-three;
         p {
-            margin-bottom: -5px;
+            margin: 9px 0 0;
         }
     }
 }
 #email {
-    width: 228px;
-    height: 42px;
+    width: 215px;
+    height: 38px;
     border: solid 0.7px $color-orange;
     margin-top: 13px;
     color: #bdbdbd;

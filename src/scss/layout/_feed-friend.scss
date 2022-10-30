@@ -5,7 +5,7 @@
 .feed-friend {
     display: flex;
     width: 100%;
-    height: 1004px;
+    // height: 1004px;
     margin: 0 auto;
     background: $gradient-feed-friend;
     opacity: 0.9;
@@ -16,11 +16,12 @@
     flex-direction: column;
     align-items: center;
     width: 72.5%;
-    height: 835px;
+    // height: 835px;
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
     margin: 69px auto 100px;
+    padding-bottom: 59px;
     h2 {
         @include h2;
         color: $color-orange-light;
@@ -75,7 +76,7 @@
             background-position: center;
         }
         p {
-            padding-top: 16px;
+            padding-top: 14px;
             @include feed-p;
             color: $color-black-blue;
         }
@@ -113,7 +114,7 @@
     button {
         width: 298px;
         height: 54px;
-        margin-top: 63px;
+        margin-top: 61px;
         padding-right: 2px;
     }
 }
