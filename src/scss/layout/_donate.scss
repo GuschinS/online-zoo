@@ -1,0 +1,260 @@
+@import "../abstracts/text-styles";
+@import "../abstracts/color-styles";
+// @import "../components/nav-hamburger";
+@import "../components/button";
+@import "../components/input-radio";
+@import "../components/input-range";
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.panda-container {
+    width: 100%;
+    background-color: $color-black-blue;
+}
+.panda {
+    height: 386px;
+    margin: 0 auto;
+    background-image: url(../assets/images/panda-donate-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.donate {
+    padding-top: 11px;
+    padding-bottom: 119px;
+    background: $gradient-feed-friend;
+    .donate-text {
+        width: 72.5%;
+        height: 238px;
+        margin: 0 auto;
+        h2 {
+            @include h3-36;
+            color: $color-white;
+            margin-bottom: -7px;
+        }
+        .p-donate-text {
+            margin-top: 16px;
+            @include medium;
+            color: $color-white;
+        }
+        h3 {
+            @include h3-36;
+            color: $color-orange-light;
+            margin: 46px 0 0;
+        }
+    }
+    .donate-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 61%;
+        margin: 59px auto;
+        background: rgba(255, 255, 255, 0.52);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        padding: 40px 92px 48px;
+        .h2-donate-main {
+            @include h2;
+            color: $color-orange-light;
+            margin: 0 14px 0 0;
+        }
+        .h3-donate-main {
+            width: 100%;
+        }
+        h3 {
+            @include h3;
+            color: $color-black-blue;
+            margin-top: 22px;
+        }
+        .panda-diet {
+            display: flex;
+            justify-content: space-between;
+            width: 550px;
+            height: 236px;
+            margin-top: 35px;
+            .amount-days {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                &::after {
+                    position: relative;
+                    left: 172px;
+                    bottom: 92px;
+                    width: 14px;
+                    height: 14px;
+                    content: url(../assets/svg/x-icon.svg);
+                }
+            }
+            h2 {
+                @include number;
+                color: $color-black;
+                text-align: center;
+                margin: 0px 0 -6px 4px;
+            }
+            .p-panda-diet {
+                @include feed-p;
+                color: $color-black-blue;
+                margin-bottom: 25px;
+                padding-left: 2px;
+            }
+        }
+        .panda-image {
+            width: 284px;
+            height: 246px;
+            background-image: url(../assets/svg/panda-widget.svg);
+            margin-right: 16px;
+        }
+        .share {
+            @include feed-p;
+            color: $color-black-blue;
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+    }
+    div .amount {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 2px;
+        p .amount {
+            @include feed_p;
+            color: $color-black;
+            margin-bottom: 5px;
+        }
+    }
+    .donate-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .range-donate {
+        position: relative;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 97.5%;
+        height: 27px;
+        outline: none;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+        border-left: solid 11px #404950;
+        border-right: solid 14px #404950;
+        background-color: #404950;
+        border-radius: 2px;
+        margin: 3px 0 13px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    & ::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        position: relative;
+        z-index: 3;
+        width: 40px;
+        height: 40px;
+        background-image: url(../assets/svg/roller-icon.svg);
+    }
+    & ::-webkit-slider-runnable-track {
+        height: 42px;
+    }
+
+    .number {
+        width: 260px;
+        height: 50px;
+        border: 1px solid #929699;
+        border-radius: 2px;
+        margin-top: 47px;
+        background-color: transparent;
+        color: #929699;
+        @include feed_p;
+        &:focus:required:invalid {
+            border: 1px solid $color-red;
+            color: $color-red;
+            &::placeholder {
+                color: $color-red;
+            }
+        }
+        &:focus:required:invalid ~ .radio::after {
+            filter: invert(26%) sepia(78%) saturate(3388%) hue-rotate(348deg) brightness(80%) contrast(108%);
+        }
+        &:focus:required {
+            border: 1px solid $color-green;
+            color: $color-green;
+        }
+        &:focus:required:valid ~ .radio::after {
+            filter: invert(41%) sepia(47%) saturate(4977%) hue-rotate(64deg) brightness(101%) contrast(101%);
+        }
+    }
+    .radio {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        @include feed-p;
+        color: $color-black-blue;
+        margin-top: 25px;
+        .monthly,
+        .once {
+            -webkit-appearance: none;
+            appearance: none;
+            font: inherit;
+            color: $color-orange-light;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $color-orange-light;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .monthly {
+            transform: translate(19px, 2px);
+        }
+        .once {
+            transform: translate(20px, 2px);
+        }
+        .label-monthly {
+            margin-left: -1px;
+        }
+        .label-once {
+            margin-right: -7px;
+        }
+        &::after {
+            position: relative;
+            bottom: 62px;
+            left: 0;
+            width: 10px;
+            height: 20px;
+            content: url(../assets/svg/dollar.svg);
+        }
+    }
+}
+
+#tickmarks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include dollar;
+    option {
+        width: 64px;
+        cursor: pointer;
+        &.black {
+            color: $color-black;
+        }
+        &.yellow {
+            color: $color-orange-light;
+        }
+        &::before {
+            content: url(../assets/svg/dollar.svg);
+            filter: invert(0%) sepia(0%) saturate(3%) hue-rotate(164deg) brightness(20%) contrast(100%);
+        }
+    }
+    & option:nth-child(1) {
+        display: block;
+    }
+}

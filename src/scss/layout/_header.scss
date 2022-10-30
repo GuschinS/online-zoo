@@ -19,7 +19,7 @@ header {
     align-items: center;
   }
   h1 {
-    width: 82px;
+    width: 4.2em;
     padding-top: 4px;
     background-image: url(../assets/svg/bamboo.svg);
     background-repeat: no-repeat;
@@ -47,10 +47,10 @@ header {
 
 ul {
   display: flex;
-  margin-left: -0.7%;
+  padding-left: 2.2em;
   li {
-    width: 96px;
     text-align: center;
+    padding: 0 1.8em;
     a {
       @include medium;
       color: $color-white;
@@ -59,13 +59,6 @@ ul {
         color: $color-orange-light;
         transition: color 500ms;
       }
-    }
-    &:nth-child(5) {
-      width: 116px;
-      margin-left: 18px;
-    }
-    &:nth-child(3) a {
-      margin-left: -9px;
     }
   }
   .active a {

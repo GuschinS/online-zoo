@@ -8,19 +8,17 @@
     flex-direction: column;
     align-items: center;
     margin: 140px auto 179px;
-    width: 72.5%;
-    width: 79.85%;
-
+    width: 72.6%;
     h2 {
         margin: 1px 0 46px;
         color: $color-black-blue;
         @include h3-36;
     }
     .line-scroll {
-        margin: 22px 0 11px;
+        margin: 21px 0 15px;
         -webkit-appearance: none;
         appearance: none;
-        width: 599px;
+        width: 51.5%;
         height: 8px;
         background: #f5f7f6;
         outline: none;
@@ -73,4 +71,10 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
+}
+
+@media (min-width: 1770px) {
+    .testimonials {
+        width: 71.5%;
+    }
 }
