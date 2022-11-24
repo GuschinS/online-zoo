@@ -46,3 +46,101 @@
         top: 626px;
     }
 }
+
+@media (max-width: 1400px) {
+    .animal {
+        width: 100%;
+        background-image: url(../assets/images/panda-small-desktop.jpg);
+        height: 584px;
+        .ellipse {
+            position: absolute;
+            right: 17.8%;
+            top: 70px;
+            width: 367px;
+            height: 367px;
+            z-index: 0;
+        }
+        .text {
+            width: 39%;
+            right: 9%;
+            top: 123px;
+            p {
+                @include h1-small;
+            }
+            h2 {
+                @include h1-small;
+            }
+        }
+        button {
+            position: absolute;
+            width: 298px;
+            height: 54px;
+            left: 56.5%;
+            top: 483px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .animal {
+        width: 100%;
+        background-image: url(../assets/images/panda-tablet.jpg);
+        height: 373px;
+        margin-top: 0;
+        .ellipse {
+            position: absolute;
+            right: 11%;
+            top: 44px;
+            width: 237px;
+            height: 237px;
+        }
+        .text {
+            width: 255px;
+            height: 204px;
+            right: 3%;
+            top: 84px;
+            p {
+                font-size: 54px;
+            }
+            h2 {
+                font-size: 54px;
+            }
+        }
+        button {
+            left: 3%;
+            top: 279px;
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    .animal {
+        width: 100%;
+        background-image: url(../assets/images/panda-m.jpg);
+        height: 187px;
+        margin: 34px auto 0;
+        .ellipse {
+            position: absolute;
+            right: 12%;
+            top: 56px;
+            width: 119px;
+            height: 119px;
+        }
+        .text {
+            width: 128px;
+            height: 102px;
+            right: 4.6%;
+            top: 75px;
+            p {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+        }
+        button {
+            left: 3%;
+            top: 241px;
+        }
+    }
+}

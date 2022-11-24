@@ -123,3 +123,168 @@
         background-position: bottom 13px right 8px;
     }
 }
+
+@media (max-width: 1400px) {
+    .animals-cards-container {
+        padding-bottom: 142px;
+        button {
+            width: 298px;
+            height: 54px;
+            margin-top: 80px;
+            padding-right: 2px;
+        }
+        .palm {
+            left: 0;
+            top: 2126px;
+            background-image: url(../assets/svg/palm-photo-small-desktop.svg);
+            background-repeat: no-repeat;
+        }
+        .strelitzia {
+            width: 240px;
+            height: 275px;
+            top: 2148px;
+            background-image: url(../assets/svg/strelitzia-small-desktop.svg);
+            background-repeat: no-repeat;
+        }
+    }
+    .animals-cards {
+        width: calc(100vw - 20px);
+        position: relative;
+        .left-right {
+            position: absolute;
+            top: 370px;
+            width: 62px;
+            height: 62px;
+        }
+        .left-button {
+            position: absolute;
+            z-index: 2;
+            background-image: url(../assets/svg/arr-left.svg);
+            left: 35%;
+        }
+        .right-button {
+            background-image: url(../assets/svg/arr-right.svg);
+            right: 35%;
+        }
+    }
+    .cards {
+        grid-column-gap: 29px;
+        grid-row-gap: 92px;
+        width: calc(97vw - 26px);
+        .card {
+            width: calc(30vw - 5px);
+        }
+        .img {
+            height: 295px;
+            background-size: 101%;
+        }
+        .banana {
+            background-image: url(../assets/svg/banana-bamboo-icon.svg);
+            background-position: bottom 12px right 12px;
+        }
+        .meet {
+            background-image: url(../assets/svg/meet-fish-icon.svg);
+            background-position: bottom 13px right 8px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .animals-cards-container {
+        padding-bottom: 100px;
+        button {
+            margin-top: 65px;
+        }
+        .palm {
+            top: 1649px;
+            width: 150px;
+            background-image: url(../assets/images/palm-photo-tablet.png);
+        }
+        .strelitzia {
+            width: 176px;
+            top: 1720px;
+            background-image: url(../assets/images/strelitzia-tablet.png);
+        }
+    }
+    .animals-cards {
+        width: 100%;
+        .left-right {
+            top: 343px;
+        }
+        .left-button {
+            background-image: url(../assets/svg/arr-left.svg);
+            left: 37.5%;
+        }
+        .right-button {
+            background-image: url(../assets/svg/arr-right.svg);
+            right: 37.5%;
+        }
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 91px;
+        width: calc(95vw - 8px);
+        .card {
+            width: calc(46vw - 9px);
+        }
+        .img {
+            height: 285px;
+        }
+        .description {
+            padding-left: 10px;
+            h3 {
+                font-size: 13px;
+                margin: 7px 0 -2px;
+            }
+            p {
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+        }
+        .banana {
+            background-position: bottom 7px right 7px;
+            background-size: 10%;
+        }
+        .meet {
+            background-position: bottom 13px right 8px;
+            background-size: 10%;
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    .animals-cards-container {
+        padding-bottom: 59px;
+        button {
+            margin-top: 20px;
+        }
+        .palm {
+            top: 2203px;
+            width: 55px;
+            background-image: url(../assets/images/palm-photo-m.png);
+        }
+        .strelitzia {
+            width: 68px;
+            top: 2208px;
+            background-image: url(../assets/images/strelitzia-m.png);
+        }
+    }
+    .animals-cards {
+        .left-right {
+            display: none;
+        }
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        width: calc(91vw - 8px);
+        .card {
+            width: calc(91vw - 9px);
+            padding-bottom: 2px;
+        }
+    }
+}
