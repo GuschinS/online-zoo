@@ -51,3 +51,125 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 }
+
+@media (max-width: 1400px) {
+    .backstage {
+        width: 94%;
+        height: 427px;
+        margin: 108px auto 133px;
+        .photo {
+            background-image: url(../assets/images/bamboo-cap-small-desktop.jpg);
+            width: 455px;
+            height: 408px;
+        }
+        .text {
+            padding-left: 3.4%;
+            h2 {
+                margin-top: -7px;
+            }
+            h3 {
+                @include h3;
+                margin: 0 0 32px;
+            }
+            p {
+                @include p;
+            }
+            .one {
+                margin: 22px 0 53px;
+            }
+            .two {
+                @include feed_p;
+            }
+        }
+        .flower {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .backstage {
+        display: flex;
+        width: 94%;
+        height: 427px;
+        margin: 67px auto 13px;
+        .photo {
+            display: none;
+        }
+        .text {
+            width: 100%;
+            padding-left: 0;
+            h2 {
+                padding-left: 3px;
+                width: 90%;
+            }
+            h3 {
+                padding-left: 4px;
+                margin: 0 0 19px;
+            }
+            p {
+                @include p;
+            }
+            .one {
+                width: 75%;
+                margin: 22px 0 30px;
+            }
+            .two {
+                @include feed_p;
+                width: 81%;
+            }
+        }
+        .flower {
+            top: 368px;
+            width: 133px;
+            display: block;
+            background-image: url(../assets/images/flower-photo-tablet.png);
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    .backstage {
+        width: 100%;
+        height: 427px;
+        margin: 67px auto 38px;
+        .photo {
+            display: none;
+        }
+        .text {
+            width: 100%;
+            padding-left: 7px;
+            padding-top: 45px;
+            h2 {
+                padding-left: 3px;
+                font-size: 24px;
+            }
+            h3 {
+                padding-left: 5px;
+                margin: 0 0 9px;
+                font-size: 24px;
+            }
+            p {
+                @include p;
+                font-size: 16px;
+            }
+            .one {
+                width: 94%;
+                margin: 10px 0 21px;
+                padding-left: 5px;
+            }
+            .two {
+                @include feed_p;
+                line-height: 138%;
+                width: 96%;
+                padding-left: 3px;
+            }
+        }
+        .flower {
+            top: 259px;
+            width: 35px;
+            display: block;
+            background-image: url(../assets/images/flower-photo-m.png);
+        }
+    }
+}
