@@ -49,7 +49,6 @@
 
 @media (max-width: 1400px) {
     .animal {
-        // max-width: 1000px;
         width: 100%;
         background-image: url(../assets/images/panda-small-desktop.jpg);
         height: 584px;
@@ -84,7 +83,6 @@
 
 @media (max-width: 950px) {
     .animal {
-        // max-width: 640px;
         width: 100%;
         background-image: url(../assets/images/panda-tablet.jpg);
         height: 373px;
@@ -117,10 +115,8 @@
 
 @media (max-width: 610px) {
     .animal {
-        // max-width: 320px;
         width: 100%;
         background-image: url(../assets/images/panda-m.jpg);
-        // background-repeat: no-repeat;
         height: 187px;
         margin: 34px auto 0;
         .ellipse {
