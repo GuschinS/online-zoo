@@ -78,3 +78,106 @@
         width: 71.5%;
     }
 }
+
+@media (max-width: 1400px) {
+    .testimonials {
+        margin: 100px auto 0;
+        width: 94%;
+
+        height: 742px;
+        h2 {
+            margin: 1px 0 29px;
+        }
+        .line-scroll {
+            margin: 20px 0 20px -16px;
+            width: 390px;
+        }
+        & ::-webkit-slider-thumb {
+            width: 75px;
+        }
+        .wrapper-button {
+            margin-top: 16px;
+        }
+        .leaf {
+            top: 3807px;
+            width: 196px;
+            background-image: url(../assets/svg/leav-photo-small-desktop.svg);
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .testimonials {
+        margin: 60px auto 0;
+        width: 95%;
+        height: 608px;
+        h2 {
+            margin: 1px 0 12px;
+        }
+        .line-scroll {
+            display: none;
+        }
+        .wrapper-button {
+            justify-content: center;
+            margin-top: 7px;
+        }
+        button {
+            width: 240px;
+            height: 54px;
+            margin-left: 0;
+        }
+        .leaf {
+            top: 3164px;
+            width: 116px;
+            background-image: url(../assets/svg/leav-photo-tablet.svg);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .testimonials-cards-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 18px auto 2px;
+    }
+}
+
+@media (max-width: 610px) {
+    .testimonials {
+        margin: 18px auto 0;
+        padding-bottom: 60px;
+        width: 94%;
+        height: auto;
+        h2 {
+            font-size: 24px;
+            margin: 11px 0 2px;
+        }
+        .line-scroll {
+            display: none;
+        }
+        .wrapper-button {
+            justify-content: center;
+            margin-top: -3px;
+        }
+        button {
+            width: 240px;
+            height: 54px;
+            margin-left: 0;
+        }
+        .leaf {
+            top: 3850px;
+            width: 51px;
+            background-image: url(../assets/images/leav-photo-m.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+@media (max-width: 335px) {
+    .testimonials {
+        .user-information {
+            margin-left: 6px;
+        }
+        .leaf {
+            top: 3873px;
+        }
+    }
+}
