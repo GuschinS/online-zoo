@@ -49,6 +49,14 @@ $font-roboto: "Roboto", sans-serif;
     line-height: 75%;
 }
 
+@mixin h1-small {
+    font-family: "Roboto-700";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 75%;
+}
+
 @mixin h2 {
     font-family: "Roboto-400";
     font-style: normal;
