@@ -184,7 +184,8 @@ footer {
 
 @media (max-width: 1400px) {
   .wrapper-footer {
-    width: 96%;
+    // width: 96%;
+    width: 95%;
     margin: 0 auto;
     padding: 25px 0 0 10px;
     .logo-sub {
@@ -199,7 +200,8 @@ footer {
     .two {
       max-width: 792px;
       ul {
-        padding-left: 4em;
+        // padding-left: 4em;
+        padding-left: 6em;
         li {
           padding: 0 1.5em;
         }
@@ -214,20 +216,31 @@ footer {
     .text-three {
       display: flex;
       flex-direction: column;
-      padding-right: 1.4em;
+      // padding-right: 1.4em;
+      padding-right: 0.7em;
     }
   }
   .footer-landing {
+    width: 96%;
     padding-left: 44px;
     .logo-sub-landing {
       padding-right: 50px;
+    }
+    .two {
+      max-width: 792px;
+      ul {
+        padding-left: 4em;
+      }
+    }
+    .text-three {
+      padding-right: 1.4em;
     }
   }
 }
 
 @media (max-width: 950px) {
   footer {
-    padding-bottom: 59px;
+    padding-bottom: 10px;
   }
   .wrapper-footer {
     width: 94%;
@@ -287,6 +300,9 @@ footer {
 }
 
 @media (max-width: 610px) {
+  footer {
+    padding-bottom: 0;
+  }
   .wrapper-footer {
     align-items: center;
     width: 95%;
@@ -316,6 +332,7 @@ footer {
     }
     .social-nav {
       display: flex;
+      height: 125px;
       padding-top: 0;
       flex-direction: column;
     }
