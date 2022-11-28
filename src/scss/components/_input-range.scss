@@ -20,6 +20,36 @@
     bottom: 9px;
     border-radius: 50%;
     z-index: 1;
-    box-shadow: 8.1vw 0 0 #ffee2e, 16.2vw 0 0 #ffee2e, 24.3vw 0 0 #ffee2e, 32.4vw 0 0 #ffee2e, 40.5vw 0 0 #ffee2e,
-        48.6vw 0 0 #ffee2e, 56.8vw 0 0 #ffee2e;
+    box-shadow: 8.1vw 0 0 $color-yellow, 16.2vw 0 0 $color-yellow, 24.3vw 0 0 $color-yellow, 32.4vw 0 0 $color-yellow,
+        40.5vw 0 0 $color-yellow, 48.6vw 0 0 $color-yellow, 56.8vw 0 0 $color-yellow;
+}
+
+@media (max-width: 1400px) {
+    #range-donate::after {
+        box-shadow: 12.8vw 0 0 $color-yellow, 25.8vw 0 0 $color-yellow, 38.8vw 0 0 $color-yellow,
+            51.8vw 0 0 $color-yellow, 64.8vw 0 0 $color-yellow, 77.8vw 0 0 $color-yellow;
+    }
+}
+
+@media (max-width: 950px) {
+    #range-donate::before {
+        width: 93%;
+        right: 4%;
+    }
+
+    #range-donate::after {
+        box-shadow: 21vw 0 0 $color-yellow, 41.5vw 0 0 $color-yellow, 62vw 0 0 $color-yellow, 82vw 0 0 $color-yellow;
+    }
+}
+
+@media (max-width: 610px) {
+    #range-donate::before {
+        bottom: 6px;
+    }
+    #range-donate::after {
+        width: 5px;
+        height: 5px;
+        bottom: 4px;
+        box-shadow: 21vw 0 0 $color-yellow, 41.5vw 0 0 $color-yellow, 62vw 0 0 $color-yellow, 82vw 0 0 $color-yellow;
+    }
 }
