@@ -184,8 +184,11 @@
         }
         .meet {
             background-image: url(../assets/svg/meet-fish-icon.svg);
-            background-position: bottom 13px right 8px;
+            background-position: bottom 12px right 12px;
         }
+    }
+    .seven .meet {
+        background-position: bottom 0 right 12px;
     }
 }
 
@@ -248,9 +251,12 @@
             background-size: 10%;
         }
         .meet {
-            background-position: bottom 13px right 8px;
+            background-position: bottom 12px right 12px;
             background-size: 10%;
         }
+    }
+    .seven .meet {
+        background-position: bottom 0 right 12px;
     }
 }
 
