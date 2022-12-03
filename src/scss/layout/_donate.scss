@@ -250,10 +250,10 @@ input[type="number"] {
     &.yellow {
       color: $color-orange-light;
     }
-    //     &::before {
-    //         content: url(../assets/svg/dollar.svg);
-    //         filter: invert(0%) sepia(0%) saturate(3%) hue-rotate(164deg) brightness(20%) contrast(100%);
-    //     }
+    &::before {
+      content: url(../assets/svg/dollar.svg);
+      filter: invert(0%) sepia(0%) saturate(3%) hue-rotate(164deg) brightness(20%) contrast(100%);
+    }
   }
   & option:nth-child(1) {
     display: block;
@@ -312,9 +312,9 @@ input[type="number"] {
     & option:nth-child(1) {
       display: none;
     }
-    & option:nth-child(3) {
-      color: $color-orange-light;
-    }
+    // & option:nth-child(3) {
+    //   color: $color-orange-light;
+    // }
   }
 }
 
@@ -418,12 +418,12 @@ input[type="number"] {
     & option:nth-child(3) {
       display: none;
     }
-    & option:nth-child(6) {
-      color: $color-orange-light;
-    }
-    & option:nth-child(5) {
-      color: $color-black;
-    }
+    // & option:nth-child(6) {
+    //   color: $color-orange-light;
+    // }
+    // & option:nth-child(5) {
+    //   color: $color-black;
+    // }
   }
 }
 
